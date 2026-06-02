@@ -11389,9 +11389,17 @@ footer{
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
 .logo img {
-  height:48px;
-  width: auto;
+  width: 180px;
+  height: auto;
   display: block;
+  background: transparent;
 }
   
