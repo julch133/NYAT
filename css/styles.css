@@ -11402,4 +11402,16 @@ footer{
   display: block;
   background: transparent;
 }
+.logo-nav {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background: transparent;
+}
+.logo-nav img {
+  width: 180px;
+  height: auto;
+  display: block;
+  background: transparent;
+}
   
