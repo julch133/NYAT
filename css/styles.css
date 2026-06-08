@@ -11414,4 +11414,46 @@ footer{
   display: block;
   background: transparent;
 }
-  
+/* ===== Service Areas Page ===== */
+
+.service-area-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.service-area-card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.service-area-card h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.service-area-card p {
+  color: rgba(229, 231, 235, 0.75);
+  margin-bottom: 1rem;
+}
+
+.service-area-card a {
+  color: #c4b5fd !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.service-area-card a:hover {
+  color: #e9d5ff !important;
+}
+
+@media (min-width: 768px) {
+  .service-area-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
