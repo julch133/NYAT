@@ -11673,3 +11673,41 @@ footer{
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
+
+.seo-flow {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.seo-flow div {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 12px;
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.seo-flow div:not(:last-child)::after {
+  bottom: -0.78rem;
+  color: #c4b5fd;
+  content: "↓";
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+  left: 1.55rem;
+  position: absolute;
+}
+
+.seo-flow i {
+  color: #c4b5fd;
+  font-size: 1.25rem;
+}
+
+.seo-flow span {
+  color: rgba(229, 231, 235, 0.86);
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+}
