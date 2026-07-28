@@ -11769,3 +11769,151 @@ footer{
     z-index: 2;
   }
 }
+
+/* Featured portfolio layout */
+.featured-portfolio {
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(124, 58, 237, 0.12),
+            transparent 34rem
+        ),
+        #080b17;
+    color: #ffffff;
+    padding: 6rem 0;
+}
+
+.portfolio-heading {
+    align-items: flex-end;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.portfolio-heading h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    margin: 0;
+}
+
+.portfolio-eyebrow,
+.project-category {
+    color: #c4b5fd;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    margin-bottom: 0.65rem;
+    text-transform: uppercase;
+}
+
+.portfolio-view-all,
+.project-link {
+    color: #ffffff;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.portfolio-view-all:hover,
+.project-link:hover {
+    color: #c4b5fd;
+}
+
+.portfolio-featured-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+}
+
+.featured-project,
+.secondary-project {
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(196, 181, 253, 0.16);
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.featured-project-image,
+.secondary-project-image {
+    display: block;
+    overflow: hidden;
+}
+
+.featured-project-image img,
+.secondary-project-image img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 250ms ease;
+    width: 100%;
+}
+
+.featured-project-image {
+    aspect-ratio: 16 / 9;
+}
+
+.secondary-project-image {
+    aspect-ratio: 16 / 10;
+}
+
+.featured-project:hover img,
+.secondary-project:hover img {
+    transform: scale(1.025);
+}
+
+.featured-project-content,
+.secondary-project-content {
+    padding: 1.75rem;
+}
+
+.featured-project-content h3,
+.secondary-project-content h3 {
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.featured-project-content h3 {
+    font-size: clamp(1.6rem, 3vw, 2.35rem);
+}
+
+.secondary-project-content h3 {
+    font-size: 1.4rem;
+}
+
+.featured-project-content p:not(.project-category),
+.secondary-project-content p:not(.project-category) {
+    color: rgba(229, 231, 235, 0.76);
+    line-height: 1.75;
+}
+
+@media (max-width: 991px) {
+    .featured-portfolio {
+        padding: 4.5rem 0;
+    }
+
+    .portfolio-featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .secondary-project {
+        display: grid;
+        grid-template-columns: minmax(240px, 0.9fr) 1.1fr;
+    }
+}
+
+@media (max-width: 575px) {
+    .portfolio-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .secondary-project {
+        display: block;
+    }
+
+    .featured-project-content,
+    .secondary-project-content {
+        padding: 1.35rem;
+    }
+}
