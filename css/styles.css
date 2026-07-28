@@ -12101,3 +12101,94 @@ footer{
         padding: 1.25rem;
     }
 }
+
+/* Portfolio spacing and image corrections */
+.portfolio-featured-grid {
+    align-items: stretch;
+    gap: 2rem;
+    grid-template-columns: minmax(0, 1.35fr) minmax(340px, 1fr);
+}
+
+.featured-project {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Stop the featured screenshot from being cropped */
+.featured-project .project-image {
+    aspect-ratio: auto;
+    min-height: auto;
+    padding: 1rem 1rem 0;
+}
+
+.featured-project .project-image img {
+    aspect-ratio: 15 / 7;
+    border-radius: 14px;
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+}
+
+/* Use the empty space in the left card more naturally */
+.featured-project .project-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(2rem, 4vw, 4rem);
+}
+
+.featured-project .project-content p:not(.project-category) {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 42rem;
+}
+
+.featured-project .project-link {
+    margin-top: 0.75rem;
+}
+
+/* Round the smaller project images */
+.side-project {
+    gap: 0;
+}
+
+.side-project .project-image {
+    margin: 0.75rem;
+    min-height: calc(100% - 1.5rem);
+}
+
+.side-project .project-image img {
+    border-radius: 12px;
+}
+
+/* Prevent any image from spilling outside its card */
+.featured-project,
+.side-project {
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    .portfolio-featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-project .project-content {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .featured-project .project-image {
+        padding: 0.75rem 0.75rem 0;
+    }
+
+    .featured-project .project-content {
+        padding: 1.5rem;
+    }
+
+    .side-project .project-image {
+        margin: 0.75rem;
+    }
+}
