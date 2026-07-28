@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+
+    <title>
+        Projects & Work Examples | Not Your Average Tech
+    </title>
+
+    <meta
+        name="description"
+        content="Explore websites, workflow tools, tracking systems, and practical technology projects created by Not Your Average Tech."
+    >
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
+        rel="stylesheet"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet"
+    >
+
+    <link href="css/styles.css" rel="stylesheet">
+
+    <style>
+        /* ========================================
+           PROJECTS LANDING PAGE
+        ======================================== */
+
+        .projects-page {
+            background: #080b17;
+            overflow: hidden;
+        }
+
+        /* Hero */
+        .projects-hero {
+            align-items: center;
+            background:
+                radial-gradient(
+                    circle at 15% 20%,
+                    rgba(124, 58, 237, 0.22),
+                    transparent 35rem
+                ),
+                radial-gradient(
+                    circle at 85% 70%,
+                    rgba(236, 72, 153, 0.12),
+                    transparent 28rem
+                ),
+                #080b17;
+            display: flex;
+            min-height: 760px;
+            padding-bottom: 6rem;
+            padding-top: 11rem;
+            position: relative;
+        }
+
+        .projects-hero::after {
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(167, 139, 250, 0.55),
+                    transparent
+                );
+            bottom: 0;
+            content: "";
+            height: 1px;
+            left: 0;
+            position: absolute;
+            right: 0;
+        }
+
+        .projects-hero h1 {
+            color: #ffffff;
+            font-size: clamp(3rem, 6vw, 5.75rem);
+            line-height: 1.02;
+            margin-bottom: 1.5rem;
+            max-width: 850px;
+        }
+
+        .projects-hero-copy {
+            color: rgba(229, 231, 235, 0.76);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 680px;
+        }
+
+        .projects-hero-actions {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .projects-hero-link {
+            color: #ffffff;
+            font-family: "Merriweather Sans", sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .projects-hero-link:hover {
+            color: #c4b5fd;
+        }
+
+        /* Hero visual */
+        .projects-hero-visual {
+            margin-left: auto;
+            max-width: 560px;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .projects-hero-image {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(196, 181, 253, 0.24);
+            border-radius: 24px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.42);
+            overflow: hidden;
+            padding: 0.75rem;
+            position: relative;
+            transform: rotate(2deg);
+        }
+
+        .projects-hero-image img {
+            border-radius: 17px;
+            display: block;
+            height: auto;
+            width: 100%;
+        }
+
+        .projects-hero-badge {
+            background: rgba(8, 11, 23, 0.94);
+            border: 1px solid rgba(196, 181, 253, 0.3);
+            border-radius: 14px;
+            bottom: -1rem;
+            color: #ffffff;
+            font-family: "Merriweather Sans", sans-serif;
+            left: -1rem;
+            padding: 1rem 1.25rem;
+            position: absolute;
+            transform: rotate(-2deg);
+        }
+
+        .projects-hero-badge span {
+            color: #c4b5fd;
+            display: block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+        }
+
+        /* Section headings */
+        .projects-section-heading {
+            align-items: flex-end;
+            display: flex;
+            gap: 2rem;
+            justify-content: space-between;
+            margin-bottom: 2.5rem;
+        }
+
+        .projects-section-heading h2 {
+            color: #ffffff;
+            font-size: clamp(2.25rem, 4vw, 4rem);
+            margin: 0;
+        }
+
+        .projects-section-heading > p {
+            color: rgba(229, 231, 235, 0.7);
+            line-height: 1.7;
+            margin: 0;
+            max-width: 460px;
+        }
+
+        /* Project label */
+        .project-label {
+            color: #c4b5fd;
+            font-family: "
