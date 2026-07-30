@@ -13024,3 +13024,409 @@ footer{
     grid-template-columns: 1fr;
   }
 }
+/* =========================================================
+   Job Code Standardization Project
+   ========================================================= */
+
+.job-code-hero {
+  min-height: 760px;
+  display: flex;
+  align-items: center;
+  padding: 9rem 0 5rem;
+}
+
+.job-code-hero h1 {
+  font-size: clamp(2.8rem, 6vw, 5.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.job-code-lead {
+  max-width: 760px;
+  margin-top: 1.5rem;
+  color: rgba(229, 231, 235, 0.78);
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.job-code-flow {
+  padding: 1.4rem;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.065),
+      rgba(255, 255, 255, 0.025)
+    );
+  border: 1px solid rgba(196, 181, 253, 0.2);
+  border-radius: 22px;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.35);
+}
+
+.job-code-system {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 14px;
+}
+
+.job-code-system-highlight {
+  background: rgba(124, 58, 237, 0.17);
+  border-color: rgba(196, 181, 253, 0.32);
+}
+
+.job-code-system i {
+  color: #c4b5fd;
+  font-size: 1.45rem;
+}
+
+.job-code-system span {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: rgba(196, 181, 253, 0.74);
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.job-code-system strong {
+  color: #ffffff;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.job-code-arrow {
+  padding: 0.4rem;
+  color: #c4b5fd;
+  text-align: center;
+}
+
+.job-code-facts {
+  display: grid;
+  gap: 1rem;
+  margin-top: 3rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.job-code-facts > div {
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(196, 181, 253, 0.18);
+  border-radius: 14px;
+}
+
+.job-code-facts span {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: rgba(196, 181, 253, 0.76);
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.job-code-facts strong {
+  color: #ffffff;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.job-code-section-alt {
+  background: rgba(15, 23, 42, 0.58);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.job-code-three-grid,
+.job-code-four-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.job-code-three-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.job-code-four-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.job-code-card {
+  height: 100%;
+  padding: 1.6rem;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0.025)
+    );
+  border: 1px solid rgba(196, 181, 253, 0.18);
+  border-radius: 18px;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.23);
+}
+
+.job-code-card h3,
+.job-code-card-heading {
+  color: #ffffff;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.job-code-card p {
+  color: rgba(203, 213, 225, 0.75);
+  line-height: 1.75;
+  margin-bottom: 0;
+}
+
+.job-code-comparison {
+  display: grid;
+  align-items: stretch;
+  gap: 1rem;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.job-code-comparison-side {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(196, 181, 253, 0.18);
+  border-radius: 18px;
+}
+
+.job-code-comparison-label {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.65rem;
+  color: #e9d5ff;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: rgba(124, 58, 237, 0.16);
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.job-code-comparison-side h3 {
+  color: #ffffff;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.job-code-comparison-side ul {
+  margin: 1.25rem 0 0;
+  padding-left: 1.2rem;
+  color: rgba(203, 213, 225, 0.78);
+  line-height: 1.8;
+}
+
+.job-code-comparison-side li {
+  margin-bottom: 0.6rem;
+}
+
+.job-code-comparison-side li::marker {
+  color: #c4b5fd;
+}
+
+.job-code-comparison-arrow {
+  display: flex;
+  width: 62px;
+  align-items: center;
+  justify-content: center;
+  color: #c4b5fd;
+  font-size: 2rem;
+}
+
+.job-code-pipeline {
+  display: grid;
+  align-items: stretch;
+  gap: 0.5rem;
+  grid-template-columns:
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr) auto
+    minmax(0, 1fr);
+}
+
+.job-code-pipeline article {
+  position: relative;
+  padding: 1.3rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(196, 181, 253, 0.18);
+  border-radius: 16px;
+}
+
+.job-code-pipeline article > span {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.8rem;
+  color: rgba(196, 181, 253, 0.6);
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.job-code-pipeline article > i {
+  display: block;
+  margin: 1.25rem 0 1rem;
+  color: #c4b5fd;
+  font-size: 1.65rem;
+}
+
+.job-code-pipeline h3 {
+  color: #ffffff;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.job-code-pipeline p {
+  color: rgba(203, 213, 225, 0.72);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.job-code-pipeline-arrow {
+  display: flex;
+  align-items: center;
+  color: #c4b5fd;
+}
+
+.job-code-list {
+  padding-left: 1.2rem;
+  color: rgba(203, 213, 225, 0.78);
+  line-height: 1.8;
+}
+
+.job-code-list li {
+  margin-bottom: 0.7rem;
+}
+
+.job-code-list li::marker {
+  color: #c4b5fd;
+}
+
+.job-code-validation-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.job-code-validation-grid article {
+  display: flex;
+  min-height: 78px;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(196, 181, 253, 0.16);
+  border-radius: 14px;
+}
+
+.job-code-validation-grid i {
+  color: #c4b5fd;
+  font-size: 1.3rem;
+}
+
+.job-code-validation-grid span {
+  color: rgba(229, 231, 235, 0.86);
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+}
+
+.job-code-step {
+  position: relative;
+  min-height: 270px;
+  overflow: hidden;
+}
+
+.job-code-step::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, #7c3aed, #c4b5fd);
+}
+
+.job-code-step > span {
+  display: block;
+  margin-bottom: 1rem;
+  color: #c4b5fd;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.job-code-confidentiality {
+  padding: 1rem 1.2rem;
+  color: rgba(203, 213, 225, 0.68);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  background: rgba(255, 255, 255, 0.025);
+  border-left: 3px solid rgba(196, 181, 253, 0.55);
+  border-radius: 0 10px 10px 0;
+}
+
+.job-code-cta {
+  padding: 6rem 0;
+  background:
+    radial-gradient(
+      600px 300px at 50% 0,
+      rgba(124, 58, 237, 0.24),
+      transparent 70%
+    ),
+    rgba(15, 23, 42, 0.58);
+}
+
+.job-code-cta .text-muted {
+  max-width: 760px;
+  margin: 1rem auto 2rem;
+}
+
+@media (max-width: 1199px) {
+  .job-code-four-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .job-code-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .job-code-pipeline {
+    grid-template-columns: 1fr;
+  }
+
+  .job-code-pipeline-arrow {
+    justify-content: center;
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .job-code-hero {
+    min-height: auto;
+    padding: 8rem 0 4rem;
+  }
+
+  .job-code-three-grid,
+  .job-code-four-grid,
+  .job-code-facts,
+  .job-code-validation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-code-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .job-code-comparison-arrow {
+    width: 100%;
+    transform: rotate(90deg);
+  }
+}
