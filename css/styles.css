@@ -13457,3 +13457,32 @@ footer{
 .featured-project-link:hover .project-link {
   color: #e9d5ff !important;
 }
+/* Make secondary project cards fully clickable */
+
+.side-project-link {
+  color: inherit !important;
+  display: block;
+  text-decoration: none !important;
+}
+
+.side-project-link:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.side-project-link .project-image {
+  display: block;
+  overflow: hidden;
+}
+
+.side-project-link .project-image img {
+  transition: transform 250ms ease;
+}
+
+.side-project-link:hover .project-image img {
+  transform: scale(1.025);
+}
+
+.side-project-link:hover .project-link {
+  color: #e9d5ff !important;
+}
