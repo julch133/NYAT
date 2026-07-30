@@ -1,102 +1,865 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!--    <title>Project Title | Jessica Ulch</title> -->
-    <title>Coming Soon</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <title>
+    Job Code Standardization & Systems Integration | Not Your Average Tech
+  </title>
+
+  <meta
+    name="description"
+    content="A data-standardization project that aligned inconsistent job codes between payroll and learning-management systems using SQL, Power Query, and Excel."
+  />
 
   <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" />
-  <link href="../css/styles.css" rel="stylesheet" />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700"
+    rel="stylesheet"
+  />
+
+  <link href="../css/styles.css?v=4" rel="stylesheet" />
 </head>
 
-<body>
+<body id="page-top">
 
-<!-- NAV -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-  <div class="container px-4 px-lg-5">
-    <a class="navbar-brand" href="../index.html">Jessica Ulch</a>
-  </div>
-</nav>
+  <!-- Navigation -->
+  <nav
+    class="navbar navbar-expand-lg navbar-light fixed-top py-3"
+    id="mainNav"
+  >
+    <a href="../index.html" class="logo-nav">
+      <img
+        src="../assets/img/logos/logo5.png"
+        alt="Not Your Average Tech"
+      />
+    </a>
 
-<!-- HERO -->
- <header class="masthead project-masthead">
-  <div class="container px-4 px-lg-5 text-center">
-    <!--<h1 class="text-white font-weight-bold">Project Title</h1> -->
-    <h1 class="text-white font-weight-bold">Coming Soon</h1>
-<!--    <p class="text-white-75 mt-3">
-      Short one-sentence summary of what this project solves.
-    </p>
-  </div>
-</header>
+    <div class="container px-4 px-lg-5">
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<!-- PROJECT CONTENT -->
-<!--  <section class="page-section">
-  <div class="container px-4 px-lg-5">
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#about">About</a>
+          </li>
 
-    <!-- Overview -->
- <!--   <div class="project-card p-4 p-md-5 mb-5">
-      <h2 class="project-h2 mb-3">Overview</h2>
-      <p class="text-muted">
-        Explain the problem. What was broken? What friction existed?
-      </p>
+          <li class="nav-item">
+            <a class="nav-link" href="../services.html">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="../projects.html">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Role + Tools -->
- <!--   <div class="project-card p-4 p-md-5 mb-5">
-      <div class="row">
-        <div class="col-md-6">
-          <h3 class="project-h3">My Role</h3>
-          <p class="text-muted">
-            What you personally did. Be specific.
+  <!-- Hero -->
+  <header class="masthead job-code-hero">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 align-items-center">
+        <div class="col-lg-7">
+          <p class="service-kicker">
+            Data Standardization · Systems Integration · 2026
           </p>
-        </div>
 
-        <div class="col-md-6">
-          <h3 class="project-h3">Tools Used</h3>
-          <div class="project-tags">
-            <span class="project-tag">SQL</span>
+          <h1 class="text-white font-weight-bold">
+            Job Code Standardization
+          </h1>
+
+          <p class="job-code-lead">
+            A dual-layer data solution that aligned inconsistent job codes
+            between payroll and learning-management systems so workforce data
+            could move between platforms more accurately and reliably.
+          </p>
+
+          <div class="project-tags mt-4">
+            <span class="project-tag">MySQL</span>
             <span class="project-tag">Power Query</span>
             <span class="project-tag">Excel</span>
+            <span class="project-tag">Data Validation</span>
+            <span class="project-tag">Systems Integration</span>
+          </div>
+        </div>
+
+        <div class="col-lg-5 mt-5 mt-lg-0">
+          <div class="job-code-flow" aria-label="Job code integration flow">
+            <div class="job-code-system">
+              <i class="bi bi-cash-stack"></i>
+
+              <div>
+                <span>Source System</span>
+                <strong>Payroll Data</strong>
+              </div>
+            </div>
+
+            <div class="job-code-arrow">
+              <i class="bi bi-arrow-down"></i>
+            </div>
+
+            <div class="job-code-system job-code-system-highlight">
+              <i class="bi bi-diagram-3"></i>
+
+              <div>
+                <span>Standardization Layer</span>
+                <strong>Job Code Mapping</strong>
+              </div>
+            </div>
+
+            <div class="job-code-arrow">
+              <i class="bi bi-arrow-down"></i>
+            </div>
+
+            <div class="job-code-system">
+              <i class="bi bi-mortarboard"></i>
+
+              <div>
+                <span>Destination System</span>
+                <strong>Learning Management</strong>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="job-code-facts">
+        <div>
+          <span>Project Type</span>
+          <strong>Data Standardization</strong>
+        </div>
+
+        <div>
+          <span>Environment</span>
+          <strong>Multi-Location Workforce</strong>
+        </div>
+
+        <div>
+          <span>Systems Connected</span>
+          <strong>Payroll + LMS</strong>
+        </div>
+
+        <div>
+          <span>Primary Goal</span>
+          <strong>Reliable Data Exchange</strong>
+        </div>
+      </div>
     </div>
+  </header>
+
+  <main>
+
+    <!-- Overview -->
+    <section class="page-section">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 align-items-start">
+          <div class="col-lg-7">
+            <p class="service-kicker">Project Overview</p>
+
+            <h2 class="project-h2 mb-4">
+              Connecting Systems That Did Not Speak the Same Language
+            </h2>
+
+            <p class="text-muted">
+              Payroll and learning-management platforms depended on the same
+              workforce information, but they did not use job codes in a
+              consistent way.
+            </p>
+
+            <p class="text-muted">
+              Differences in naming conventions, formatting, abbreviations,
+              and missing values created mismatches when employee data moved
+              between systems.
+            </p>
+
+            <p class="text-muted mb-0">
+              I designed a dual-layer solution using MySQL for automated data
+              processing and Power Query for a user-facing review workflow.
+              The solution standardized job codes, detected exceptions, and
+              produced cleaner datasets for downstream systems.
+            </p>
+          </div>
+
+          <div class="col-lg-5 mt-4 mt-lg-0">
+            <article class="job-code-card">
+              <div class="service-icon">
+                <i class="bi bi-bullseye"></i>
+              </div>
+
+              <h3>The Central Goal</h3>
+
+              <p>
+                Create a reliable translation layer that allowed separate
+                business systems to interpret the same workforce records
+                consistently.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="page-section job-code-section-alt">
+      <div class="container px-4 px-lg-5">
+        <div class="text-center mb-5">
+          <p class="service-kicker">The Problem</p>
+
+          <h2 class="project-h2">
+            Small Data Differences Created Larger System Problems
+          </h2>
+
+          <hr class="divider" />
+        </div>
+
+        <div class="job-code-three-grid">
+          <article class="job-code-card">
+            <div class="service-icon">
+              <i class="bi bi-exclamation-triangle"></i>
+            </div>
+
+            <h3>Inconsistent Codes</h3>
+
+            <p>
+              The same role could be represented by different codes,
+              abbreviations, descriptions, or formatting conventions.
+            </p>
+          </article>
+
+          <article class="job-code-card">
+            <div class="service-icon">
+              <i class="bi bi-question-diamond"></i>
+            </div>
+
+            <h3>Unmatched Records</h3>
+
+            <p>
+              Missing, outdated, or unrecognized values prevented some records
+              from mapping cleanly between platforms.
+            </p>
+          </article>
+
+          <article class="job-code-card">
+            <div class="service-icon">
+              <i class="bi bi-arrow-repeat"></i>
+            </div>
+
+            <h3>Manual Corrections</h3>
+
+            <p>
+              Employees had to identify and resolve mismatches manually,
+              increasing administrative work and the opportunity for error.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before and after -->
+    <section class="page-section">
+      <div class="container px-4 px-lg-5">
+        <div class="text-center mb-5">
+          <p class="service-kicker">Before and After</p>
+
+          <h2 class="project-h2">
+            From Disconnected Values to a Shared Standard
+          </h2>
+
+          <hr class="divider" />
+        </div>
+
+        <div class="job-code-comparison">
+          <article class="job-code-comparison-side">
+            <span class="job-code-comparison-label">Before</span>
+
+            <h3>System-Specific Job Codes</h3>
+
+            <ul>
+              <li>Different codes represented similar roles.</li>
+              <li>Naming conventions were inconsistent.</li>
+              <li>Missing values required manual research.</li>
+              <li>Errors were discovered after import.</li>
+              <li>Corrections were difficult to track.</li>
+            </ul>
+          </article>
+
+          <div class="job-code-comparison-arrow">
+            <i class="bi bi-arrow-right"></i>
+          </div>
+
+          <article class="job-code-comparison-side">
+            <span class="job-code-comparison-label">After</span>
+
+            <h3>Standardized Mapping Structure</h3>
+
+            <ul>
+              <li>Each source code mapped to an approved standard.</li>
+              <li>Descriptions followed consistent formatting.</li>
+              <li>Exceptions were identified before export.</li>
+              <li>Clean records were ready for downstream use.</li>
+              <li>Mappings could be reviewed and maintained.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data pipeline -->
+    <section class="page-section job-code-section-alt">
+      <div class="container px-4 px-lg-5">
+        <div class="text-center mb-5">
+          <p class="service-kicker">Solution Architecture</p>
+
+          <h2 class="project-h2">
+            A Dual-Layer Data Processing Workflow
+          </h2>
+
+          <hr class="divider" />
+        </div>
+
+        <div class="job-code-pipeline">
+          <article>
+            <span>01</span>
+            <i class="bi bi-database"></i>
+            <h3>Import Source Data</h3>
+
+            <p>
+              Collect job-code and workforce records from the source system.
+            </p>
+          </article>
+
+          <div class="job-code-pipeline-arrow">
+            <i class="bi bi-chevron-right"></i>
+          </div>
+
+          <article>
+            <span>02</span>
+            <i class="bi bi-braces"></i>
+            <h3>Normalize With SQL</h3>
+
+            <p>
+              Clean formatting and apply standardized mapping logic.
+            </p>
+          </article>
+
+          <div class="job-code-pipeline-arrow">
+            <i class="bi bi-chevron-right"></i>
+          </div>
+
+          <article>
+            <span>03</span>
+            <i class="bi bi-shield-check"></i>
+            <h3>Validate Records</h3>
+
+            <p>
+              Detect missing, mismatched, duplicate, or noncompliant values.
+            </p>
+          </article>
+
+          <div class="job-code-pipeline-arrow">
+            <i class="bi bi-chevron-right"></i>
+          </div>
+
+          <article>
+            <span>04</span>
+            <i class="bi bi-table"></i>
+            <h3>Review Exceptions</h3>
+
+            <p>
+              Present flagged records through a user-friendly Power Query
+              workflow.
+            </p>
+          </article>
+
+          <div class="job-code-pipeline-arrow">
+            <i class="bi bi-chevron-right"></i>
+          </div>
+
+          <article>
+            <span>05</span>
+            <i class="bi bi-box-arrow-right"></i>
+            <h3>Export Clean Data</h3>
+
+            <p>
+              Produce a standardized dataset for the destination system.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two-layer design -->
+    <section class="page-section">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 align-items-start">
+          <div class="col-lg-6">
+            <p class="service-kicker">Automated Processing</p>
+
+            <h2 class="project-h2 mb-4">
+              Layer One: MySQL
+            </h2>
+
+            <p class="text-muted">
+              The database layer handled repeatable cleanup and normalization
+              logic. It created a consistent process that could be rerun when
+              updated source data became available.
+            </p>
+
+            <ul class="job-code-list">
+              <li>Standardized spacing and capitalization</li>
+              <li>Normalized job-code formats</li>
+              <li>Applied approved code mappings</li>
+              <li>Detected duplicate records</li>
+              <li>Flagged missing or invalid values</li>
+              <li>Produced clean and exception datasets</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <p class="service-kicker">User Review</p>
+
+            <h2 class="project-h2 mb-4">
+              Layer Two: Power Query
+            </h2>
+
+            <p class="text-muted">
+              The Power Query layer gave nontechnical users a familiar
+              interface for refreshing data, reviewing exceptions, and
+              preparing corrected records.
+            </p>
+
+            <ul class="job-code-list">
+              <li>Imported data into an accessible Excel workflow</li>
+              <li>Displayed unmatched and noncompliant records</li>
+              <li>Separated clean records from exceptions</li>
+              <li>Supported review without direct database access</li>
+              <li>Reduced dependence on manual spreadsheet cleanup</li>
+              <li>Created a repeatable refresh process</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Validation -->
+    <section class="page-section job-code-section-alt">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 align-items-start">
+          <div class="col-lg-5">
+            <p class="service-kicker">Validation Logic</p>
+
+            <h2 class="project-h2 mb-4">
+              Catching Problems Before They Reached Another System
+            </h2>
+
+            <p class="text-muted">
+              The solution did more than transform data. It also identified
+              records that could not be safely standardized without review.
+            </p>
+          </div>
+
+          <div class="col-lg-7 mt-4 mt-lg-0">
+            <div class="job-code-validation-grid">
+              <article>
+                <i class="bi bi-x-circle"></i>
+                <span>Missing job codes</span>
+              </article>
+
+              <article>
+                <i class="bi bi-link-45deg"></i>
+                <span>Unmapped source values</span>
+              </article>
+
+              <article>
+                <i class="bi bi-files"></i>
+                <span>Duplicate records</span>
+              </article>
+
+              <article>
+                <i class="bi bi-exclamation-diamond"></i>
+                <span>Noncompliant formats</span>
+              </article>
+
+              <article>
+                <i class="bi bi-arrow-left-right"></i>
+                <span>Conflicting mappings</span>
+              </article>
+
+              <article>
+                <i class="bi bi-person-x"></i>
+                <span>Inactive or outdated roles</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Process -->
-<!--    <div class="project-card p-4 p-md-5 mb-5">
-      <h2 class="project-h2 mb-3">Process</h2>
-      <ul class="project-list">
-        <li>Step 1 — What you did</li>
-        <li>Step 2 — What changed</li>
-        <li>Step 3 — What improved</li>
-      </ul>
+    <section class="page-section">
+      <div class="container px-4 px-lg-5">
+        <div class="text-center mb-5">
+          <p class="service-kicker">Project Process</p>
+
+          <h2 class="project-h2">
+            How the Standardization Solution Was Developed
+          </h2>
+
+          <hr class="divider" />
+        </div>
+
+        <div class="job-code-four-grid">
+          <article class="job-code-card job-code-step">
+            <span>01</span>
+
+            <div class="service-icon">
+              <i class="bi bi-search"></i>
+            </div>
+
+            <h3>Analyze the Data</h3>
+
+            <p>
+              Compared payroll and LMS records to identify formatting
+              differences, missing values, and conflicting job codes.
+            </p>
+          </article>
+
+          <article class="job-code-card job-code-step">
+            <span>02</span>
+
+            <div class="service-icon">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+
+            <h3>Define the Mapping</h3>
+
+            <p>
+              Created a standardized mapping structure that connected source
+              codes to approved destination values.
+            </p>
+          </article>
+
+          <article class="job-code-card job-code-step">
+            <span>03</span>
+
+            <div class="service-icon">
+              <i class="bi bi-gear"></i>
+            </div>
+
+            <h3>Automate Cleanup</h3>
+
+            <p>
+              Implemented SQL and Power Query transformations to make the
+              process consistent and repeatable.
+            </p>
+          </article>
+
+          <article class="job-code-card job-code-step">
+            <span>04</span>
+
+            <div class="service-icon">
+              <i class="bi bi-check2-circle"></i>
+            </div>
+
+            <h3>Validate the Output</h3>
+
+            <p>
+              Separated clean records from exceptions so unresolved data could
+              be corrected before import.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="page-section job-code-section-alt">
+      <div class="container px-4 px-lg-5">
+        <div class="text-center mb-5">
+          <p class="service-kicker">Project Outcomes</p>
+
+          <h2 class="project-h2">
+            A Stronger Foundation for Connected Systems
+          </h2>
+
+          <hr class="divider" />
+        </div>
+
+        <div class="job-code-three-grid">
+          <article class="job-code-card">
+            <div class="service-icon">
+              <i class="bi bi-check2-square"></i>
+            </div>
+
+            <h3>Improved Data Integrity</h3>
+
+            <p>
+              Standardized values reduced ambiguity and made workforce records
+              more consistent across platforms.
+            </p>
+          </article>
+
+          <article class="job-code-card">
+            <div class="service-icon">
+              <i class="bi bi-eye"></i>
+            </div>
+
+            <h3>Better Exception Visibility</h3>
+
+            <p>
+              Missing and mismatched values were identified before they became
+              downstream system errors.
+            </p>
+          </article>
+
+          <article class="job-code-card">
+            <div class="service-icon">
+              <i class="bi bi-arrow-repeat"></i>
+            </div>
+
+            <h3>Repeatable Processing</h3>
+
+            <p>
+              The workflow could be refreshed with new source data instead of
+              rebuilding cleanup steps manually.
+            </p>
+          </article>
+
+          <article class="job-code-card">
+            <div class="service-icon">
+              <i class="bi bi-person-check"></i>
+            </div>
+
+            <h3>Accessible Review</h3>
+
+            <p>
+              Power Query gave users a familiar interface for reviewing
+              exceptions without needing direct SQL access.
+            </p>
+          </article>
+
+          <article class="job-code-card">
+            <div class="service-icon">
+              <i class="bi bi-diagram-2"></i>
+            </div>
+
+            <h3>Smoother Integration</h3>
+
+            <p>
+              Clean, standardized records created a more reliable exchange
+              between payroll and learning systems.
+            </p>
+          </article>
+
+          <article class="job-code-card">
+            <div class="service-icon">
+              <i class="bi bi-layers"></i>
+            </div>
+
+            <h3>Scalable Structure</h3>
+
+            <p>
+              New job codes and mappings could be incorporated into the
+              existing process as business requirements changed.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Role and tools -->
+    <section class="page-section">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+          <div class="col-lg-6">
+            <article class="job-code-card">
+              <h2 class="job-code-card-heading">My Role</h2>
+
+              <ul class="job-code-list mb-0">
+                <li>Analyzed job-code inconsistencies between systems</li>
+                <li>Designed the standardized mapping structure</li>
+                <li>Built SQL cleanup and validation logic</li>
+                <li>Created the Power Query review interface</li>
+                <li>Developed clean-data and exception outputs</li>
+                <li>Documented the repeatable refresh workflow</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <article class="job-code-card">
+              <h2 class="job-code-card-heading">
+                Tools and Skills
+              </h2>
+
+              <div class="project-tags">
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">SQL</span>
+                <span class="project-tag">Power Query</span>
+                <span class="project-tag">Microsoft Excel</span>
+                <span class="project-tag">Data Mapping</span>
+                <span class="project-tag">Data Validation</span>
+                <span class="project-tag">Exception Reporting</span>
+                <span class="project-tag">Systems Integration</span>
+                <span class="project-tag">Process Documentation</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="job-code-confidentiality mt-4">
+          This public case study summarizes the project at a high level.
+          Internal employee data, proprietary job codes, company records, and
+          organization-specific system configurations have been omitted or
+          generalized.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="job-code-cta">
+      <div class="container px-4 px-lg-5 text-center">
+        <p class="service-kicker">Data Standardization</p>
+
+        <h2 class="project-h2">
+          Connected Systems Depend on Consistent Data
+        </h2>
+
+        <p class="text-muted">
+          When platforms use different names, codes, and formats, a
+          standardization layer can turn disconnected records into reliable
+          information.
+        </p>
+
+        <a
+          href="../index.html#contact"
+          class="btn btn-primary btn-xl"
+        >
+          Discuss a Data Project
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container px-4 px-lg-5">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo">
+            <img
+              src="../assets/img/logos/logo5.png"
+              alt="Not Your Average Tech"
+            />
+          </a>
+
+          <p>
+            Websites, workflow tools, local search setup, and practical
+            technology support for small businesses.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Services</h3>
+
+          <ul>
+            <li>
+              <a href="../services/business_websites.html">
+                Business Websites
+              </a>
+            </li>
+
+            <li>
+              <a href="../services/business_tracking_systems.html">
+                Tracking Systems
+              </a>
+            </li>
+
+            <li>
+              <a href="../services/workflow_improvement.html">
+                Workflow Improvement
+              </a>
+            </li>
+
+            <li>
+              <a href="../services/technology_support_integration.html">
+                Technology Integration
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Site</h3>
+
+          <ul>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+
+          <ul>
+            <li><a href="tel:+17314000171">(731) 400-0171</a></li>
+
+            <li>
+              <a href="mailto:admin@notyouraveragetech.net">
+                Admin@NotYourAverageTech.net
+              </a>
+            </li>
+
+            <li><a href="../index.html#contact">Send a Message</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          Copyright &copy; 2026 Not Your Average Tech. All rights reserved.
+        </p>
+      </div>
     </div>
+  </footer>
 
-    <!-- Results -->
-<!--    <div class="project-card p-4 p-md-5">
-      <h2 class="project-h2 mb-3">Results</h2>
-      <p class="text-muted">
-        Quantify impact if possible. Time saved, clarity gained, friction reduced.
-      </p>
-    </div>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
 
-  </div>
-</section>
-
-<footer class="bg-light py-5">
-  <div class="container px-4 px-lg-5 text-center">
-    <a href="../index.html" class="btn btn-primary btn-xl">
-      Back to Portfolio
-    </a>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../js/scripts.js"></script>
+  <script src="../js/scripts.js"></script>
 </body>
 </html>
