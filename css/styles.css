@@ -13430,3 +13430,30 @@ footer{
     transform: rotate(90deg);
   }
 }
+/* Make the complete featured project card clickable */
+
+.featured-project-link {
+  color: inherit !important;
+  display: block;
+  text-decoration: none !important;
+}
+
+.featured-project-link:hover {
+  color: inherit !important;
+}
+
+.featured-project-link .project-image {
+  overflow: hidden;
+}
+
+.featured-project-link .project-image img {
+  transition: transform 250ms ease;
+}
+
+.featured-project-link:hover .project-image img {
+  transform: scale(1.025);
+}
+
+.featured-project-link:hover .project-link {
+  color: #e9d5ff !important;
+}
