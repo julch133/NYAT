@@ -13430,59 +13430,39 @@ footer{
     transform: rotate(90deg);
   }
 }
-/* Make the complete featured project card clickable */
+/* Whole-card links without changing the card layout */
 
-.featured-project-link {
-  color: inherit !important;
-  display: block;
+.clickable-project-card {
+  position: relative;
+}
+
+.project-card-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  border-radius: inherit;
   text-decoration: none !important;
 }
 
-.featured-project-link:hover {
-  color: inherit !important;
+.clickable-project-card .project-category,
+.clickable-project-card h3,
+.clickable-project-card p,
+.clickable-project-card .project-link {
+  text-decoration: none !important;
 }
 
-.featured-project-link .project-image {
+.clickable-project-card .project-image {
   overflow: hidden;
 }
 
-.featured-project-link .project-image img {
+.clickable-project-card .project-image img {
   transition: transform 250ms ease;
 }
 
-.featured-project-link:hover .project-image img {
+.clickable-project-card:hover .project-image img {
   transform: scale(1.025);
 }
 
-.featured-project-link:hover .project-link {
-  color: #e9d5ff !important;
-}
-/* Make secondary project cards fully clickable */
-
-.side-project-link {
-  color: inherit !important;
-  display: block;
-  text-decoration: none !important;
-}
-
-.side-project-link:hover {
-  color: inherit !important;
-  text-decoration: none !important;
-}
-
-.side-project-link .project-image {
-  display: block;
-  overflow: hidden;
-}
-
-.side-project-link .project-image img {
-  transition: transform 250ms ease;
-}
-
-.side-project-link:hover .project-image img {
-  transform: scale(1.025);
-}
-
-.side-project-link:hover .project-link {
+.clickable-project-card:hover .project-link {
   color: #e9d5ff !important;
 }
