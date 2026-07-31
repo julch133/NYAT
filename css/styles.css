@@ -13495,3 +13495,228 @@ footer{
   line-height: 1.8;
   max-width: 610px;
 }
+
+
+/* =========================================================
+   Compact Header with Call and Text Actions
+   ========================================================= */
+
+#mainNav {
+  background: rgba(7, 10, 20, 0.94) !important;
+  border-bottom: 1px solid rgba(196, 181, 253, 0.16) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+  padding: 0.65rem 0 !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+#mainNav .header-container {
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 1800px;
+  padding-left: clamp(1rem, 3vw, 3rem);
+  padding-right: clamp(1rem, 3vw, 3rem);
+}
+
+/* Logo */
+
+#mainNav .logo-nav {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#mainNav .logo-nav img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: clamp(230px, 22vw, 340px);
+}
+
+/* Collapsible header content */
+
+#mainNav .navbar-collapse {
+  align-items: center;
+  gap: clamp(1rem, 2vw, 2.5rem);
+}
+
+/* Navigation links */
+
+#mainNav .header-navigation {
+  align-items: center;
+  gap: clamp(0.25rem, 0.8vw, 1rem);
+  margin-left: auto;
+}
+
+#mainNav .header-navigation .nav-link {
+  color: rgba(229, 231, 235, 0.82) !important;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.75rem clamp(0.45rem, 0.7vw, 0.8rem);
+  position: relative;
+  white-space: nowrap;
+}
+
+#mainNav .header-navigation .nav-link:hover,
+#mainNav .header-navigation .nav-link:focus,
+#mainNav .header-navigation .nav-link.active {
+  color: #ffffff !important;
+}
+
+#mainNav .header-navigation .nav-link::after {
+  background: linear-gradient(90deg, #7c3aed, #ec4899);
+  bottom: 0.3rem;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 160ms ease;
+  width: calc(100% - 1rem);
+}
+
+#mainNav .header-navigation .nav-link:hover::after,
+#mainNav .header-navigation .nav-link:focus::after,
+#mainNav .header-navigation .nav-link.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Phone, call, and text controls */
+
+#mainNav .header-contact {
+  align-items: center;
+  border: 1px solid rgba(139, 92, 246, 0.55);
+  border-radius: 14px;
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.55rem;
+  padding: 0.45rem;
+}
+
+#mainNav .header-phone {
+  align-items: center;
+  color: #ffffff !important;
+  display: flex;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  gap: 0.6rem;
+  padding: 0.45rem 0.55rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#mainNav .header-phone i {
+  color: #a78bfa;
+  font-size: 1.1rem;
+}
+
+#mainNav .header-phone:hover,
+#mainNav .header-phone:focus {
+  color: #c4b5fd !important;
+}
+
+#mainNav .header-action {
+  border: 1px solid rgba(196, 181, 253, 0.5);
+  border-radius: 9px;
+  color: #ffffff !important;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  min-width: 66px;
+  padding: 0.45rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+#mainNav .header-action:hover,
+#mainNav .header-action:focus {
+  background: rgba(124, 58, 237, 0.22);
+  border-color: #a78bfa;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+/* Hamburger */
+
+#mainNav .navbar-toggler {
+  border: 1px solid rgba(196, 181, 253, 0.35);
+  box-shadow: none;
+  margin-left: auto;
+}
+
+#mainNav .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(124, 58, 237, 0.22);
+}
+
+/* Tablet and mobile menu */
+
+@media (max-width: 1199.98px) {
+  #mainNav .logo-nav img {
+    width: clamp(215px, 45vw, 300px);
+  }
+
+  #mainNav .navbar-collapse {
+    align-items: stretch;
+    background: rgba(11, 16, 32, 0.98);
+    border: 1px solid rgba(196, 181, 253, 0.16);
+    border-radius: 14px;
+    margin-top: 0.75rem;
+    padding: 1rem;
+  }
+
+  #mainNav .header-navigation {
+    align-items: stretch;
+    gap: 0;
+    margin: 0;
+  }
+
+  #mainNav .header-navigation .nav-link {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 0.85rem 0.5rem;
+  }
+
+  #mainNav .header-navigation .nav-link::after {
+    display: none;
+  }
+
+  #mainNav .header-contact {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  #mainNav .header-phone {
+    flex: 1;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #mainNav .header-container {
+    gap: 0.5rem;
+  }
+
+  #mainNav .logo-nav img {
+    width: min(230px, 68vw);
+  }
+
+  #mainNav .header-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #mainNav .header-phone {
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+
+  #mainNav .header-action {
+    width: 100%;
+  }
+}
