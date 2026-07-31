@@ -13720,3 +13720,299 @@ footer{
     width: 100%;
   }
 }
+/* =========================================================
+   Featured Service Areas Footer
+   ========================================================= */
+
+.site-footer-featured {
+  background:
+    radial-gradient(
+      600px 300px at 8% 10%,
+      rgba(124, 58, 237, 0.12),
+      transparent 65%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(15, 23, 42, 0.72),
+      rgba(7, 10, 20, 0.98)
+    );
+  border-top: 1px solid rgba(196, 181, 253, 0.13);
+  padding: 4.5rem 0 2rem;
+}
+
+.site-footer-featured .footer-featured-grid {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns:
+    minmax(250px, 1.4fr)
+    minmax(260px, 1fr)
+    minmax(190px, 0.75fr)
+    minmax(250px, 1fr);
+}
+
+/* Vertical column dividers */
+
+.site-footer-featured .footer-column {
+  border-left: 1px solid rgba(196, 181, 253, 0.13);
+  padding-left: 2rem;
+}
+
+/* Logo and description */
+
+.site-footer-featured .footer-logo {
+  display: inline-flex;
+}
+
+.site-footer-featured .footer-logo img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 290px;
+}
+
+.site-footer-featured .footer-brand > p {
+  color: rgba(229, 231, 235, 0.72);
+  line-height: 1.8;
+  margin: 1.25rem 0 1.5rem;
+  max-width: 29rem;
+}
+
+/* Service Areas feature card */
+
+.footer-service-area-card {
+  align-items: center;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(124, 58, 237, 0.11),
+      rgba(236, 72, 153, 0.04)
+    );
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  border-radius: 14px;
+  display: flex;
+  gap: 1rem;
+  max-width: 25rem;
+  padding: 1.1rem;
+  text-decoration: none;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.footer-service-area-card:hover,
+.footer-service-area-card:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 14px 30px rgba(124, 58, 237, 0.16);
+  transform: translateY(-2px);
+}
+
+.footer-feature-icon {
+  align-items: center;
+  background: rgba(124, 58, 237, 0.15);
+  border: 1px solid rgba(196, 181, 253, 0.22);
+  border-radius: 50%;
+  color: #c4b5fd;
+  display: flex;
+  flex: 0 0 52px;
+  font-size: 1.35rem;
+  height: 52px;
+  justify-content: center;
+}
+
+.footer-feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.footer-feature-content strong {
+  color: #ffffff;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.footer-feature-content > span {
+  color: #a78bfa;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.footer-feature-content .bi-arrow-right {
+  margin-left: 0.25rem;
+  transition: transform 180ms ease;
+}
+
+.footer-service-area-card:hover .bi-arrow-right {
+  transform: translateX(4px);
+}
+
+/* Column headings */
+
+.site-footer-featured .footer-column h3 {
+  color: #ffffff;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.site-footer-featured .footer-site h3 a {
+  color: #a78bfa !important;
+  text-decoration-color: rgba(167, 139, 250, 0.65);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3rem;
+}
+
+.site-footer-featured .footer-site h3 a:hover,
+.site-footer-featured .footer-site h3 a:focus {
+  color: #e9d5ff !important;
+}
+
+/* Standard footer links */
+
+.site-footer-featured .footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer-featured .footer-column li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  margin: 0;
+}
+
+.site-footer-featured .footer-column li:last-child {
+  border-bottom: 0;
+}
+
+.site-footer-featured .footer-column li > a {
+  align-items: center;
+  color: rgba(229, 231, 235, 0.78) !important;
+  display: flex;
+  gap: 0.75rem;
+  min-height: 48px;
+  padding: 0.65rem 0;
+  text-decoration: none;
+  transition:
+    color 160ms ease,
+    padding-left 160ms ease;
+}
+
+.site-footer-featured .footer-column li > a:hover,
+.site-footer-featured .footer-column li > a:focus {
+  color: #ffffff !important;
+  padding-left: 0.25rem;
+}
+
+.site-footer-featured .footer-column li > a > i:first-child {
+  color: #a78bfa;
+  flex: 0 0 20px;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.footer-link-arrow {
+  color: #ec4899;
+  font-size: 0.75rem;
+  margin-left: auto;
+  transition: transform 160ms ease;
+}
+
+.site-footer-featured
+  .footer-column
+  li
+  > a:hover
+  .footer-link-arrow {
+  transform: translateX(3px);
+}
+
+/* Contact links */
+
+.site-footer-featured .footer-contact li > a {
+  align-items: flex-start;
+}
+
+.footer-contact-icon {
+  align-items: center;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 50%;
+  color: #a78bfa;
+  display: flex;
+  flex: 0 0 38px;
+  height: 38px;
+  justify-content: center;
+}
+
+.site-footer-featured .footer-contact li > a > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.site-footer-featured .footer-contact small {
+  color: #a78bfa;
+  display: block;
+  font-size: 0.76rem;
+}
+
+/* Copyright */
+
+.site-footer-featured .footer-bottom {
+  border-top: 1px solid rgba(196, 181, 253, 0.12);
+  margin-top: 3rem;
+  padding-top: 1.35rem;
+  text-align: center;
+}
+
+.site-footer-featured .footer-bottom p {
+  color: rgba(167, 176, 192, 0.75);
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+/* Responsive layout */
+
+@media (max-width: 1199.98px) {
+  .site-footer-featured .footer-featured-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-footer-featured .footer-column {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .site-footer-featured {
+    padding-top: 3.5rem;
+  }
+
+  .site-footer-featured .footer-featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer-featured .footer-brand {
+    text-align: center;
+  }
+
+  .site-footer-featured .footer-brand > p,
+  .footer-service-area-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-service-area-card {
+    text-align: left;
+  }
+
+  .site-footer-featured .footer-column {
+    border-top: 1px solid rgba(196, 181, 253, 0.12);
+    padding-top: 1.75rem;
+  }
+}
