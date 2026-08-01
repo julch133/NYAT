@@ -14726,3 +14726,62 @@ summary:focus-visible {
     grid-column: auto;
   }
 }
+
+
+/* Service Areas Landing Page */
+
+.service-area-region {
+  margin-top: 4.5rem;
+}
+
+.service-area-region:first-of-type {
+  margin-top: 0;
+}
+
+.service-area-region-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1.4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e3dce6;
+}
+
+.service-area-region-heading h2 {
+  margin: 0;
+  font-size: clamp(1.65rem, 3vw, 2.3rem);
+}
+
+.service-area-region-heading > p {
+  max-width: 560px;
+  margin: 0;
+  color: #69616c;
+  line-height: 1.65;
+}
+
+.area-directory-card-featured {
+  border-color: #a5539d;
+  background: linear-gradient(145deg, #ffffff, #fbf2fb);
+  box-shadow: 0 12px 30px rgba(92, 35, 104, 0.12);
+}
+
+.service-area-landing-services {
+  margin-top: 3rem;
+}
+
+@media (max-width: 650px) {
+  .service-area-region {
+    margin-top: 3.5rem;
+  }
+
+  .service-area-region-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .service-area-region-heading > p {
+    max-width: 100%;
+  }
+}
