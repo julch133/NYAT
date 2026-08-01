@@ -14203,3 +14203,59 @@ summary:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+/* Consistent spacing between site sections */
+:root {
+  --section-space: clamp(3.75rem, 6vw, 5.75rem);
+  --section-space-compact: clamp(3rem, 4.5vw, 4.5rem);
+  --section-heading-gap: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.page-section,
+.featured-portfolio,
+.job-code-cta {
+  padding-block: var(--section-space);
+}
+
+.service-final-cta {
+  padding-block: var(--section-space-compact);
+}
+
+.portfolio-heading {
+  margin-bottom: var(--section-heading-gap);
+}
+
+.site-footer-featured {
+  padding-top: var(--section-space-compact);
+}
+
+/* Privacy and accessibility pages */
+.legal-hero {
+  padding-block: var(--section-space) var(--section-space-compact);
+}
+
+.legal-layout {
+  gap: clamp(2rem, 4vw, 3rem);
+  padding-block: var(--section-space-compact);
+}
+
+.legal-content section + section {
+  margin-top: clamp(1.75rem, 3vw, 2.5rem);
+  padding-top: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+/* Tablet and mobile */
+@media (max-width: 767.98px) {
+  :root {
+    --section-space: 3.5rem;
+    --section-space-compact: 2.75rem;
+    --section-heading-gap: 1.75rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 575.98px) {
+  :root {
+    --section-space: 3rem;
+    --section-space-compact: 2.5rem;
+  }
+}
